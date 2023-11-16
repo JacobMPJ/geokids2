@@ -1,0 +1,129 @@
+/** Globales **/
+:root {
+    --oscuro: #212121;
+    --amarillo: #ffc107;
+    --blanco: #fff;
+    --fondo: #bfd7d9;
+    --secundario: #0b747e;
+    --nav: #76a9e7;
+    --gris: #bbb9b9;
+    --fuentePrincipal: 'Krub', sans-serif;
+}
+/**Contenido general**/
+html {
+    font-family: var(--fuentePrincipal);
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px; /**1rem = 10px*/
+    background-color: var(--fondo);
+}
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h1,h2 {
+    text-align: center;
+    font-family: 'Krub', sans-serif;
+}
+p {
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+.boton {
+    background-color: var(--nav);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+    transition: background-color .3s ease;
+}
+
+@media (min-width: 768px){
+    .boton {
+        width: auto;
+    }
+}
+
+.boton:hover {
+  cursor: pointer;
+  background-color: var(--secundario);
+  font-size: 2.5rem;     
+}
+
+/*Utilidades*/
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 768px){
+    .w-sm-100 {
+        width: auto;
+    }
+}
+
+/* Header */
+.header {
+    text-align: center;
+    font-size: 2 rem;
+}
+.icono-geo {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.contenedor {
+    max-width: 120 rem;
+    margin: 0 auto ;
+}
+/*Navegacion*/
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--nav);
+}
+@media (min-width: 768px){ /*mq para una tablet aprox*/
+    .nav {
+        flex-direction: row;
+    }
+}
+.nav a {
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.nav a:hover {
+    background-color: var(--secundario);
+    color: var(--oscuro);
+}
+
+/*Main*/
+
+/*Boton de volver*/
+.volver{
+    margin: 3rem;
+}
+
+/*Contenido principal*/
+.contenido__score{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
