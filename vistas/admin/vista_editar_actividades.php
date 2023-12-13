@@ -26,11 +26,11 @@
                     </div>
                     <div class="campo">
                         <label>Nivel: </label>
-                        <input class="input-text" type="text" name="nivel" placeholder="Nivel del juego. Ej. 1 ó 2" value="<?php echo $filaSeleccionada['nivel'];?>">
+                        <input class="input-text" type="text" name="nivel" placeholder="Escriba el nivel con un numero" value="<?php echo $filaSeleccionada['nivel'];?>">
                     </div>
                     <div class="campo">
                         <label>Identificador de ejercicio: </label>
-                        <input class="input-text" type="text" name="actividad" placeholder="Ej. E101 ó ACT101" value="<?php echo $filaSeleccionada['actividad'];?>">
+                        <input class="input-text" type="text" name="actividad" placeholder="Escribe el numero de actividad" value="<?php echo $filaSeleccionada['actividad'];?>">
                     </div>
                     <div class="campo">
                         <label>Link de resultados: </label>

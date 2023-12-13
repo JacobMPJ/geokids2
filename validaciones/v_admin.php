@@ -53,8 +53,8 @@ if($ibotonAdd){
             echo '<script>alert("La actividad se agrego de manera exitosa.");</script>';
         }
     }
-    //echo '<script>window.location.href = "?p=1";</script>';   
-    //exit();
+    echo '<script>window.location.href = "?p=3";</script>';   
+    exit();
 }
 if($ibotonModify){
     //echo "Se modifico \n" ;

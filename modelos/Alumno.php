@@ -25,14 +25,17 @@
 //correcto
         function iniciarSesion() {
             $sql = "SELECT usuario, password, tipo, nombre FROM Usuarios WHERE usuario = '".$this->usuario."' && password = '".$this->pass."';";
+
             if ($result = mysqli_query($this->db, $sql)) {
                 $row = mysqli_fetch_assoc($result);
-                if($this->usuario == $row['usuario'] && $this->pass == $row['password']){   
-                    $this->tipo = $row['tipo'];
-                    $this->nombre = $row['nombre'];
-                    return true;
+                if(isset($row['usuario']) && isset($row['password'])){
+                    if($this->usuario == $row['usuario'] && $this->pass == $row['password']){   
+                        $this->tipo = $row['tipo'];
+                        $this->nombre = $row['nombre'];
+                        return true;
+                    }
+                    return false;
                 }
-                return false;
             }
         }
 //corecto, pendiente de ver si necesita modificaciones

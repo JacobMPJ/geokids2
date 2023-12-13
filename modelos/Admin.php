@@ -77,7 +77,8 @@
         }
 //probar
         function seleccionarEjercicios($nivel){
-            $sql = "SELECT  id,frame, actividad FROM Actividades WHERE nivel = '".$nivel."' ;";
+            $activo = 1;
+            $sql = "SELECT  id,frame, actividad FROM Actividades WHERE nivel = '".$nivel."' && estado = ".$activo.";" ;
             if ($result = mysqli_query($this->db, $sql)) {
                 while($row = mysqli_fetch_assoc($result)){
                     $ejercicios[] = $row;

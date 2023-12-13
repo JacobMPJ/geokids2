@@ -4,7 +4,7 @@
         var $host = "localhost";
         //var $port = "";
         var $user = "root";
-        var $pass = "geokids";
+        var $pass = "";
         var $database = "geokids";
         
         function connect(){

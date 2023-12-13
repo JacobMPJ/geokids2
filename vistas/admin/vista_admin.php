@@ -16,11 +16,11 @@
                     </div>
                     <div class="campo">
                         <label>Nivel: </label>
-                        <input class="input-text" name="nivel" type="text" placeholder="Nivel del juego. Ej. 1 ó 2">
+                        <input class="input-text" name="nivel" type="text" placeholder="Escribe el nivel en numero">
                     </div>
                     <div class="campo">
                         <label>Identificador de ejercicio: </label>
-                        <input class="input-text" name="actividad" type="text" placeholder="Ej. E101 ó ACT101">
+                        <input class="input-text" name="actividad" type="text" placeholder="Escribe el numero de actividad">
                     </div>
                     <div class="campo">
                         <label>Link de resultados: </label>
